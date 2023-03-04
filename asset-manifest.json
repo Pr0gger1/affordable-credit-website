@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/affordable-credit-website/static/css/main.bfe94ab1.css",
+    "main.css": "/affordable-credit-website/static/css/main.6ab1540e.css",
     "main.js": "/affordable-credit-website/static/js/main.1fbd2b50.js",
     "static/media/second_block_phones_and_cash.jpg": "/affordable-credit-website/static/media/second_block_phones_and_cash.a4535d04b1e6676e5f65.jpg",
     "static/media/introduce_block_img.jpg": "/affordable-credit-website/static/media/introduce_block_img.08ea25e92f8596c0ad47.jpg",
@@ -11,11 +11,11 @@
     "static/media/over500million.jpg": "/affordable-credit-website/static/media/over500million.7cd9a0c3b29516f82f44.jpg",
     "static/media/list_marker.svg": "/affordable-credit-website/static/media/list_marker.5aabe413a1f4518dae6e.svg",
     "index.html": "/affordable-credit-website/index.html",
-    "main.bfe94ab1.css.map": "/affordable-credit-website/static/css/main.bfe94ab1.css.map",
+    "main.6ab1540e.css.map": "/affordable-credit-website/static/css/main.6ab1540e.css.map",
     "main.1fbd2b50.js.map": "/affordable-credit-website/static/js/main.1fbd2b50.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfe94ab1.css",
+    "static/css/main.6ab1540e.css",
     "static/js/main.1fbd2b50.js"
   ]
 }
