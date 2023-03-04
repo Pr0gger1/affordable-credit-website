@@ -1,0 +1,27 @@
+.footer__navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    width: 75%;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+}
+
+@media screen and (max-width: 600px) {
+    .footer__navbar {
+        width: 100%;
+    }
+}
+
+.footer__navbar_list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__navbar_list li {
+    cursor: pointer;
+}
+
+.footer__navbar_list li:not(:last-child) {
+    margin-bottom: 30%;
+}

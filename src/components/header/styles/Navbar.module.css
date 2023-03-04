@@ -1,18 +1,21 @@
 .navbar__container {
-    padding-top: 1.5rem;
     display: flex;
     justify-content: center;
-
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
     transition: all 1s ease-in;
 }
+
 .navbar__list {
+    padding: 0;
     list-style-type: none;
     display: flex;
     gap: 1.5rem;
 }
-.navbar__element {
-    display: inline-block;
-}
+
+/*.navbar__element {*/
+/*    display: inline-block;*/
+/*}*/
 
 .navbar__element a {
     text-decoration: none;
@@ -22,3 +25,16 @@
 .navbar__element a:hover {
     font-weight: 600;
 }
+
+@media screen and (max-width: 370px) {
+    .navbar__element a {
+        font-size: 0.8rem;
+    }
+    .navbar__list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*@media screen and (max-width: 300px) {*/
+
+/*}*/
