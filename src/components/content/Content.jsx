@@ -1,8 +1,13 @@
 import React from 'react';
-import styles from './Content.module.css';
+
 import IntroduceBlock from './blocks/IntroduceBlock';
 import SecondBlock from "./blocks/SecondBlock";
 import ProductBlock from "./blocks/ProductBlock";
+import ApplicationBlock from "./blocks/ApplicationBlock";
+import FeedbackBlock from "./blocks/FeedbackBlock";
+
+import styles from './Content.module.css';
+import OutroBlock from "./blocks/OutroBlock";
 
 const Content = () => {
     return (
@@ -10,6 +15,9 @@ const Content = () => {
             <IntroduceBlock/>
             <SecondBlock/>
             <ProductBlock/>
+            <ApplicationBlock/>
+            <FeedbackBlock/>
+            <OutroBlock/>
         </div>
     );
 };

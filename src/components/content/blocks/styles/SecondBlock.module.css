@@ -11,9 +11,3 @@
     justify-content: space-around;
     align-items: center;
 }
-.right__img img {
-    max-width: 100%;
-}
-.left__img img {
-    max-width: 100%;
-}

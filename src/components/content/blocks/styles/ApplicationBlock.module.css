@@ -1,0 +1,53 @@
+.app__section {
+    padding: 5rem 2.5rem;
+    background-color: #000;
+    color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    gap: 22.5%;
+}
+
+@media screen and (max-width: 1000px) {
+    .app__section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .app__store_info div {
+        margin-top: 1rem;
+    }
+}
+
+.app_section__img img {
+    max-width: 100%;
+}
+
+.app__store_info {
+    padding-top: 1rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.app__store_info h5 {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.app__store_info p {
+    font-size: 0.8rem;
+}
+
+.app_store__header {
+
+}
+
+.feedback__container {
+    display: flex;
+    gap: 3rem;
+}
+
