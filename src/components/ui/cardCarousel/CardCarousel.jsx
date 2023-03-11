@@ -1,48 +1,33 @@
-import { useState } from "react";
+import React from "react";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+
 import styles from './CardCarousel.module.css';
+import './CardCarouselAnimation.css';
 
-export const CardCarousel = () => {
-    const cardsData = [
-        {
-            text: "Empower Thrive has been amazing since day one.",
-            caption: "Roberto V."
-        },
-        {
-            text: "Empower Thrive got me through a tough spot.",
-            caption: "Demarcus O."
-        },
-        {
-            text: "Empower Thrive gave me the money I needed when I needed it. Quick and easy.",
-            caption: "Sanika S."
-        }
-    ];
-
-    const [cardsArray, setCardsArray] = useState(cardsData);
-    const [totalPages, setTotalPages] = useState(1);
-    const [currentCardPage, setCurrentCardPage] = useState(1);
-
-    const cardLimit = 3;
-
-    const lastIndexCard = cardLimit * currentCardPage;
-    const firstCardLimit = lastIndexCard - cardLimit;
+export const CardCarousel = ({ cards }) => {
 
     return (
-        <div className={styles.carousel__container}>
+        <TransitionGroup className={styles.carousel__container}>
             {
-                cardsArray.map((card, index) =>
-                    <div className={styles.carousel__card}
+                cards.map((card, index) => (
+                    <CSSTransition
                         key={index}
-                    >
-                        <blockquote className={styles.carousel__text}>
-                            {card.text}
-                        </blockquote>
+                        timeout={500}
+                        classNames={`card`}
+                        unmountOnExit
+                        >
+                            <div className={styles.carousel__card}>
+                                <blockquote className={styles.carousel__text}>
+                                    "{card.text}"
+                                </blockquote>
 
-                        <span className={styles.carousel__caption}>
-                            {card.caption}
-                        </span>
-                    </div>
-                )
+                                <span className={styles.carousel__caption}>
+                                    {card.caption}
+                                </span>
+                            </div>
+                    </CSSTransition>
+                ))
             }
-        </div>
+        </TransitionGroup>
     );
 };

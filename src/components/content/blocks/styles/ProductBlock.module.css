@@ -6,20 +6,12 @@
     padding: 10%;
 }
 
-.product__section h2 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.product__section h3 {
-    margin: 0;
+.choose_product h2 {
+    margin: 2rem 0 4rem 0;
 }
 
 .choose_product {
     text-align: center;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
 }
 
 .choose_product .card__container {

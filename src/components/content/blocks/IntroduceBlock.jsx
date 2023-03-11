@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './styles/IntroduceBlock.module.css';
 import introduceBlockImg from '../../../assets/img/introduce_block_img.jpg';
+import AnimationContainer from "../../ui/animations/AnimationContainer/AnimationContainer";
 
 const IntroduceBlock = () => {
     return (
         <section className={styles.introduce__section}>
             <div className={styles.introduce_text__block}>
-                <h1>Your journey to better credit starts here</h1>
+                <AnimationContainer duration={200}>
+                    <h1>Your journey to better credit starts here</h1>
+                </AnimationContainer>
 
                 <div className={styles.image__block}>
                     <img src={introduceBlockImg} alt="introduce organization"/>
