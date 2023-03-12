@@ -10,14 +10,24 @@
 .introduce_text__block {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 1.5rem;
+}
+.introduce__section h1 {
+    width: 81%;
 }
 
 .introduce_text__block p {
     font-size: 1.2rem;
+    width: 80%;
 }
 
 .image__block {
+    width: 80%;
+}
+
+.image__block img {
+    width: 100%;
     max-width: 100%;
 }
 
@@ -80,8 +90,13 @@
         flex-direction: column;
     }
 
+    .introduce__section h1 {
+        margin: 0 auto;
+    }
+
     .introduce_text__block .image__block {
         display: inline-block;
+        margin: 0 auto;
     }
 
     .introduce_text__block .image__block img {

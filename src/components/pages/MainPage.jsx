@@ -6,13 +6,11 @@ import Footer from '../footer/Footer';
 
 const MainPage = () => {
     return (
-        <>
+        <main className={styles.main__container}>
             <Header/>
-            <main className={styles.main__container}>
-                <Content/>
-                <Footer/>
-            </main>
-        </>
+            <Content/>
+            <Footer/>
+        </main>
     );
 };
 
