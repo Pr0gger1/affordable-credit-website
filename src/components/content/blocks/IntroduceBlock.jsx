@@ -1,15 +1,16 @@
 import React from 'react';
-import styles from './styles/IntroduceBlock.module.css';
 import introduceBlockImg from '../../../assets/img/introduce_block_img.jpg';
-import AnimationContainer from "../../ui/animations/AnimationContainer/AnimationContainer";
+
+import '../../ui/animations/AnimationContainer/animations.css';
+import styles from './styles/IntroduceBlock.module.css';
 
 const IntroduceBlock = () => {
     return (
         <section className={styles.introduce__section}>
             <div className={styles.introduce_text__block}>
-                <AnimationContainer duration={200}>
-                    <h1>Your journey to better credit starts here</h1>
-                </AnimationContainer>
+                <h1 className='slide-up'>
+                    Your journey to better credit starts here
+                </h1>
 
                 <div className={styles.image__block}>
                     <img src={introduceBlockImg} alt="introduce organization"/>
@@ -49,7 +50,7 @@ const IntroduceBlock = () => {
                 </span>
             </div>
 
-            <div className={styles.image__block}>
+            <div className={[styles.image__block, 'slide-left', 'scale-down'].join(' ')}>
                 <img src={introduceBlockImg} alt="introduce organization"/>
             </div>
         </section>

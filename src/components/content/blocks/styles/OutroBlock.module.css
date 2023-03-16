@@ -1,6 +1,6 @@
 .outro__section {
     padding: 10%;
-    background-color: #fcd0ba;
+    background-color: var(--bgColorCardFirst);
     display: flex;
     justify-content: space-between;
 }

@@ -1,7 +1,36 @@
+[data-theme='light'] {
+  --bgColorFirst: #fff;
+  --fontColor: #000;
+
+  --bgColorHeaderMessage: #c1cbe7;
+  --bgColorCardFirst: #fcd0ba;
+  --bgColorCardSecond: #ccd3e7;
+  --bgColorCardCarousel: #efefef;
+}
+
+[data-theme='dark'] {
+  --bgColorFirst: #333333;
+  --fontColor: #fff;
+
+  --bgColorHeaderMessage: #3458b7;
+  --bgColorCardFirst: #a1664c;
+  --bgColorCardSecond: #7e98da;
+  --bgColorCardCarousel: #6b6b6b;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+
+  color: var(--fontColor);
+  background-color: var(--bgColorFirst);
+
+  transition: background-color .5s ease;
+}
+
+a, span, blockquote {
+  color: var(--fontColor);
 }
 
 * {
@@ -29,6 +58,14 @@ h2 {
 @media screen and (max-width: 400px) {
   h2 {
     font-size: 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 

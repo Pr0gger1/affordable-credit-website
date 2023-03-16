@@ -4,7 +4,6 @@ import styles from './Pagination.module.css';
 export const Pagination = ({ totalPages, changePage, page }) => {
     const pageList = usePagination(totalPages);
 
-
     if (totalPages !== 1) {
         return (
             <div className={styles.pagination__container}>

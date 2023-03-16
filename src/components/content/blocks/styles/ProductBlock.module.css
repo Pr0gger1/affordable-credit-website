@@ -91,6 +91,12 @@
     width: 10rem;
 }
 
+@media screen and (max-width: 450px) {
+    .product__section {
+        padding: 10% 0.5rem;
+    }
+}
+
 @media screen and (max-width: 975px) {
     .card__list li {
         padding-left: 20%;

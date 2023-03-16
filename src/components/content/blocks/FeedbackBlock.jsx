@@ -20,7 +20,7 @@ const cardsData = [
         caption: "Lundberg T."
     },
     {
-        text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
+        text: "At vero eos et ducimus quos dolores sint occaecati cupiditate non provident.",
         caption: "Mattsson E."
     },
     {

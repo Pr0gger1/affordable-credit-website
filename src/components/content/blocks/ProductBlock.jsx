@@ -16,7 +16,7 @@ const ProductBlock = () => {
                 <h2>Choose your product</h2>
 
                 <div className={styles.cards__block}>
-                    <Card background='#fcd0ba' direction='row'>
+                    <Card background='var(--bgColorCardFirst)' direction='row'>
                         <div className={styles.card__container}>
                             <img src={productMockup1} alt="mockup 1"/>
 
@@ -34,7 +34,7 @@ const ProductBlock = () => {
                             </div>
                         </div>
                     </Card>
-                    <Card background='#fcd0ba'>
+                    <Card background='var(--bgColorCardFirst)'>
                         <div className={styles.card__container}>
                             <img src={productMockup2} alt="mockup 1"/>
 
@@ -77,7 +77,7 @@ const ProductBlock = () => {
                 <h2>Choose where to deposit your cash</h2>
 
                 <div className={styles.cards__block}>
-                    <Card background='#ccd3e7' direction='row'>
+                    <Card background='var(--bgColorCardSecond)' direction='row'>
                         <div className={styles.card__container}>
                             <img src={creditCard} alt="credit card"
                                 style={{position: "static"}}
@@ -116,7 +116,7 @@ const ProductBlock = () => {
                         </div>
                     </Card>
 
-                    <Card background='#ccd3e7'>
+                    <Card background='var(--bgColorCardSecond)'>
                         <div className={styles.card__container}>
                             <img src={accountCard} alt='account'
                                 style={{position: 'static'}}/>

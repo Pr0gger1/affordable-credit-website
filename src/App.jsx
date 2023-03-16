@@ -1,10 +1,13 @@
 import React from 'react';
 
 import MainPage from './components/pages/MainPage';
+import ThemeProvider from "./context/ThemeProvider";
 
 function App() {
   return (
-      <MainPage/>
+      <ThemeProvider>
+        <MainPage/>
+      </ThemeProvider>
   );
 }
 
