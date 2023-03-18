@@ -4,11 +4,10 @@
     margin: 0;
 
     background-color: var(--bgColorHeaderMessage);
-    /*background-color: #c1cbe7;*/
-}
 
-@media screen and (max-width: 400px) {
-    .header_message__block p{
-        font-size: 0.8rem;
+    p {
+        @media (max-width: 400px) {
+           font-size: 0.8rem;
+        }
     }
 }

@@ -1,0 +1,128 @@
+.product__section {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+
+    padding: 10%;
+
+    @media (max-width: 450px) {
+        padding: 10% 0.5rem;
+        gap: 10rem;
+    }
+
+    .choose_product {
+        text-align: center;
+
+        h2 {
+            margin: 2rem 0 4rem 0;
+        }
+
+        img {
+            position: relative;
+            top: 5%;
+
+            @media (max-width: 375px) {
+                top: 2%;
+            }
+        }
+
+        .cards__block {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .card__container {
+            display: flex;
+            gap: 5%;
+            align-items: flex-start;
+            justify-content: center;
+
+            @media (max-width: 1000px) {
+                flex-direction: column-reverse;
+            }
+
+            @media (max-width: 400px) {
+                gap: 0;
+            }
+
+            img {
+                @media (max-width: 450px) {
+                    height: 50%;
+                }
+
+                @media (max-width: 1000px) {
+                    position: static;
+                    margin: 0 auto;
+                }
+            }
+            
+            .header_card {
+                font-size: 3rem;
+            }
+            
+            .card__content {
+                text-align: left;
+    
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+        
+        .card__list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0;
+        
+            li {
+                font-size: 1.25rem;
+                list-style: none;
+                background: url("../../../../assets/img/icons/list_marker.svg")
+                no-repeat 0 50%;
+        
+                padding-left: 15%;
+                line-height: 200%;
+        
+                @media (max-width: 975px) {
+                    padding-left: 20%;
+                }
+            }
+        }
+    }
+}
+
+
+.card__subtext {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.read_more__btn {
+    padding: 1rem;
+
+    cursor: pointer;
+    
+    background-color: #000;
+    color: #fff;
+    
+    border-radius: 2rem;
+    width: 10rem;
+
+    @media (max-width: 1000px) {
+        margin: 0 auto 1rem auto;
+    }
+}
+
+.card__tag {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+
+    padding: 1rem;
+    border-radius: 2rem;
+
+    width: 10rem;
+}

@@ -5,15 +5,16 @@ import applicationBlockImg from '../../../assets/img/application_block_img.jpg';
 import appStoreLogo from '../../../assets/img/app_store_logo.png';
 import googlePlayLogo from '../../../assets/img/google_play_logo.png';
 
-import styles from './styles/ApplicationBlock.module.css';
+import styles from './styles/ApplicationBlock.module.scss';
 import FeedbackCardApp from "../../ui/cards/FeedbackCardApp";
 
 function ApplicationBlock() {
     return (
         <section className={styles.app__section}>
-            <div className={styles.app_section__img}>
-                <img src={applicationBlockImg} alt="credit application"/>
-            </div>
+            <img
+                src={applicationBlockImg}
+                alt="credit application"
+            />
 
             <div className={styles.app__store_info}>
                 <div className={styles.app_store__header}>

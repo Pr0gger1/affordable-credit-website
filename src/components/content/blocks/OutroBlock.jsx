@@ -1,7 +1,7 @@
 import React from "react";
 import outroImg from '../../../assets/img/outro_img.jpg';
 
-import styles from './styles/OutroBlock.module.css';
+import styles from './styles/OutroBlock.module.scss';
 
 const OutroBlock = () => {
     return (

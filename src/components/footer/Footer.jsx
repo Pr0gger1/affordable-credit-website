@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterNavbar from "./FooterNavbar";
-import styles from './styles/Footer.module.css';
+import styles from './styles/Footer.module.scss';
 const Footer = () => {
     return (
         <footer className={styles.footer}>

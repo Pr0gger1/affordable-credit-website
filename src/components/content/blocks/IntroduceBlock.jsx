@@ -1,8 +1,8 @@
 import React from 'react';
 import introduceBlockImg from '../../../assets/img/introduce_block_img.jpg';
 
-import '../../ui/animations/AnimationContainer/animations.css';
-import styles from './styles/IntroduceBlock.module.css';
+import '../../ui/animations/animations.css';
+import styles from './styles/IntroduceBlock.module.scss';
 
 const IntroduceBlock = () => {
     return (
@@ -12,7 +12,7 @@ const IntroduceBlock = () => {
                     Your journey to better credit starts here
                 </h1>
 
-                <div className={styles.image__block}>
+                <div className={[styles.image__block, 'slide-left', 'scale-down'].join(' ')}>
                     <img src={introduceBlockImg} alt="introduce organization"/>
                 </div>
 

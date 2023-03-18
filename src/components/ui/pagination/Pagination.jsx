@@ -1,5 +1,5 @@
 import usePagination from "../../../hooks/usePagination";
-import styles from './Pagination.module.css';
+import styles from './Pagination.module.scss';
 
 export const Pagination = ({ totalPages, changePage, page }) => {
     const pageList = usePagination(totalPages);
@@ -9,15 +9,17 @@ export const Pagination = ({ totalPages, changePage, page }) => {
             <div className={styles.pagination__container}>
             {
                 pageList.map(p => (
-                    <div
-                        className={p === page ?
-                            [styles.pagination__item, styles.selected].join(' ')
-                            : styles.pagination__item
-                    }
-                        key={p}
-                        onClick={() => changePage(p)}>
+                    <a href="#feedback_header" key={p}>
+                        <div
+                            className={p === page ?
+                                [styles.pagination__item, styles.selected].join(' ')
+                                : styles.pagination__item
+                        }
+                            // key={p}
+                            onClick={() => changePage(p)}>
 
-                    </div>
+                        </div>
+                    </a>
                 ))
             }
             </div>

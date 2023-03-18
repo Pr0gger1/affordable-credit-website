@@ -1,8 +1,8 @@
-import styles from './MainPage.module.css';
+import styles from './MainPage.module.scss';
 
-import Header from '../header/Header';
-import Content from '../content/Content';
-import Footer from '../footer/Footer';
+import Header from '../components/header/Header';
+import Content from '../components/content/Content';
+import Footer from '../components/footer/Footer';
 
 const MainPage = () => {
     return (

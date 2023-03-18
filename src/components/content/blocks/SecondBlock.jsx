@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/SecondBlock.module.css';
+import styles from './styles/SecondBlock.module.scss';
 
 import phonesAndCashImg from '../../../assets/img/second_block_phones_and_cash.jpg'
 import img from '../../../assets/img/over500million.jpg';

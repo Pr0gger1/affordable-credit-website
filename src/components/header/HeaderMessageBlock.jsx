@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles/HeaderMessageBlock.module.css';
+import styles from './styles/HeaderMessageBlock.module.scss';
 
 const HeaderMessageBlock = () => {
     return (
