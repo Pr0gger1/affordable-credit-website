@@ -4,12 +4,14 @@
     flex-shrink: 0;
     flex-wrap: wrap;
     gap: 1rem;
+
+    & > * {
+        flex: 1 1 0.5rem;
+    }
+    
+    .theme_switcher__container {
+        align-self: center;
+    }
 }
 
-.header__container > * {
-    flex: 1 1 0.5rem;
-}
 
-.theme_switcher__container {
-    align-self: center;
-}

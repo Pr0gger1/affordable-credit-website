@@ -1,23 +1,23 @@
 import React from "react";
-import styles from './styles/FooterNavbar.module.css';
+import styles from './styles/FooterNavbar.module.scss';
 
 const FooterNavbar = () => {
     return (
         <div className={styles.footer__navbar}>
             <ul className={styles.footer__navbar_list}>
-                <li>
+                <li className={styles.navbar__item}>
                     About us
                 </li>
-                <li>
+                <li className={styles.navbar__item}>
                     Customer Stories
                 </li>
-                <li>
+                <li className={styles.navbar__item}>
                     Careers
                 </li>
-                <li>
+                <li className={styles.navbar__item}>
                     Quiz
                 </li>
-                <li>
+                <li className={styles.navbar__item}>
                     Support
                 </li>
             </ul>

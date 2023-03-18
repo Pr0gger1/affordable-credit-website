@@ -5,7 +5,7 @@ import HeaderMessageBlock from './HeaderMessageBlock';
 import Navbar from './Navbar';
 
 import {styled, Switch} from "@mui/material";
-import styles from './styles/Header.module.css';
+import styles from './styles/Header.module.scss';
 
 
 const ThemeSwitcher = styled(Switch)(({ theme }) => ({

@@ -1,0 +1,47 @@
+$infoColor: #B3B3B3;
+
+.footer {
+    color: #fff;
+    background-color: #000;
+    padding: 3rem 0 5rem 0;
+
+    @media (max-width: 600px) {
+        justify-content: center;
+    }
+
+    &__tm_nav {
+        padding: 0 10% 1rem 2rem;
+
+        display: flex;
+        flex-direction: row;
+
+        gap: 10%;
+        border-bottom: 1px solid #4d4d4d;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            padding: 0 2rem;
+        }
+
+        .trademark_info {
+            color: $infoColor;
+            width: 25%;
+            font-size: clamp(0.8rem, 5vw, 1rem);
+
+            @media (max-width: 600px) {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .additional__info {
+        color: $infoColor;
+        padding: 0 2rem;
+        margin-top: 2rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+

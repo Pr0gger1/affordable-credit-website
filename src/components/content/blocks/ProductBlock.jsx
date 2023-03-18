@@ -6,7 +6,7 @@ import productMockup2 from '../../../assets/img/mockups/product_mockup2.png';
 import creditCard from '../../../assets/img/mockups/credit_card.png';
 import accountCard from '../../../assets/img/mockups/account_card.png';
 
-import styles from './styles/ProductBlock.module.css';
+import styles from './styles/ProductBlock.module.scss';
 
 const ProductBlock = () => {
     return (
@@ -16,7 +16,10 @@ const ProductBlock = () => {
                 <h2>Choose your product</h2>
 
                 <div className={styles.cards__block}>
-                    <Card background='var(--bgColorCardFirst)' direction='row'>
+                    <Card
+                        background='var(--bgColorCardFirst)'
+                        direction='row'
+                    >
                         <div className={styles.card__container}>
                             <img src={productMockup1} alt="mockup 1"/>
 
@@ -34,6 +37,7 @@ const ProductBlock = () => {
                             </div>
                         </div>
                     </Card>
+
                     <Card background='var(--bgColorCardFirst)'>
                         <div className={styles.card__container}>
                             <img src={productMockup2} alt="mockup 1"/>

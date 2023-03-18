@@ -1,0 +1,41 @@
+.feedback__card {
+    background-color: #fff;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    color: #000;
+
+    @media (max-width: 375px) {
+        padding: 0.5rem 1rem;
+    }
+
+    .feedback__store img {
+        width: 100%;
+        height: 2rem;
+    }
+
+    .feedback__stars {
+        text-align: left;
+    }
+
+    .feedback_scores__container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+
+        .feedback__score {
+            font-size: 2rem;
+            color: black;
+        }
+
+        .feedback__reviews {
+            font-size: 0.75rem;
+            color: gray;
+        }
+    }
+
+}
+

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import star from '../../../assets/img/icons/star_feedback.svg';
 
-import styles from './styles/FeedbackCardApp.module.css';
+import styles from './styles/FeedbackCardApp.module.scss';
 
 const FeedbackCardApp = ({ storeLogo, score, reviews, starsCount }) => {
     const [starsCountState, setStarsCountState] = useState([]);

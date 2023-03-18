@@ -1,0 +1,34 @@
+.navbar__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    transition: all 1s ease-in;
+
+    .navbar__list {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        gap: 1.5rem;
+
+        @media (max-width: 375px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .navbar__element {
+            a {
+                text-decoration: none;
+
+                @media (max-width: 375px) {
+                    font-size: 0.8rem;
+                }
+
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+

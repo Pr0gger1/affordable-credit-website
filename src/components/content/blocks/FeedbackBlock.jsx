@@ -4,7 +4,7 @@ import { CardCarousel } from "../../ui/cardCarousel/CardCarousel";
 import { Pagination } from "../../ui/pagination/Pagination";
 import getPageCount from "../../../utils/getPageCount";
 
-import styles from './styles/FeedbackBlock.module.css';
+import styles from './styles/FeedbackBlock.module.scss';
 
 const cardsData = [
     {
@@ -72,13 +72,12 @@ const FeedbackBlock = () => {
 
     return (
         <section className={styles.feedback__section}>
-            <h2 id="feedback_header">
+            <h2 id='feedback_header'>
                 Giving credit where credit's due
             </h2>
 
             <CardCarousel
                 currentPage={currentCardPage}
-                setCurrentPage={setCurrentCardPage}
                 cards={currentCardsArray}
             />
 

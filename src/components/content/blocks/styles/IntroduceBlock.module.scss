@@ -1,0 +1,124 @@
+.introduce__section {
+    display: flex;
+    padding: 5% 1.5rem;
+
+    @media (max-width: 990px) {
+        flex-direction: column;
+    }
+
+    h1 {
+        width: 81%;
+
+        @media (max-width: 990px) {
+             margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .introduce_text__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1.5rem;
+
+
+        .image__block {
+            display: none;
+            @media (max-width: 990px) {
+                display: inline-block;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            width: 80%;
+        }
+    }
+
+    .image__block {
+        width: 80%;
+
+        @media (max-width: 990px) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .get_email__block {
+        display: flex;
+        width: 50%;
+
+        @media (max-width: 990px) {
+            width: 100%;
+        }
+
+        .get_email__input {
+            padding: 1rem;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border: 1px solid #ececec;
+            flex: 1;
+        }
+
+        .get_app__btn {
+            padding: 1rem;
+            background-color: #000;
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            color: #fff;
+            text-transform: uppercase;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .introduce__special_offer {
+        width: 40%;
+        padding-left: 25%;
+
+        @media (max-width: 990px) {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+    }
+    .introduce_carousel__block {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 50%;
+
+        @media (max-width: 990px) {
+            margin: 0 auto;
+        }
+
+        .carousel__element {
+            height: 2px;
+            width: 33%;
+            background-color: #000;
+
+            &.active {
+                background-color: #ffad8b;
+            }
+        }
+    }
+
+    .introduce__notice {
+        margin-top: 10%;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
